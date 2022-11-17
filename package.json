@@ -1,0 +1,30 @@
+{
+  "name": "theinternet",
+  "version": "1.0.0",
+  "description": "Practive project for Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monikakonieczna/Cypress-Practice---The-Internet.git"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "Monika Konieczna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monikakonieczna/Cypress-Practice---The-Internet/issues"
+  },
+  "homepage": "https://github.com/monikakonieczna/Cypress-Practice---The-Internet#readme",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.1",
+    "@cypress/xpath": "^2.0.3"
+  },
+  "dependencies": {
+    "cypress-downloadfile": "^1.2.3"
+  }
+}
