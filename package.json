@@ -8,7 +8,8 @@
     "cy:open": "cypress open",
     "cypress run": "npm run cypress run",
     "test:ci": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --browser chrome",
-    "cy:docker": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --browser chrome"
+    "cy:docker": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --browser chrome",
+    "cy:grep": "cypress run --browser chrome --env grepTags=@smoke --spec cypress/e2e/dropdown.cy.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/monikakonieczna/Cypress-Practice---The-Internet#readme",
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.2.1",
+    "@cypress/grep": "^3.1.0",
     "@cypress/xpath": "^2.0.3"
   },
   "dependencies": {

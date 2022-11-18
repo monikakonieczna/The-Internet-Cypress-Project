@@ -21,3 +21,7 @@ import "cypress-real-events";
 require('@4tw/cypress-drag-drop')
 require('@cypress/xpath');
 require('cypress-downloadfile/lib/downloadFileCommand');
+
+// https://github.com/cypress-io/cypress/tree/develop/npm/grep
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()
