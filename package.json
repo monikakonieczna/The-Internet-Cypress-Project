@@ -7,8 +7,8 @@
     "cy:test": "cypress run",
     "cy:open": "cypress open",
     "cypress run": "npm run cypress run",
-    "cy:record": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --record",
-    "test:ci": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --browser chrome"
+    "test:ci": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --browser chrome",
+    "cy:docker": "cypress run --spec 'cypress/e2e/dropdown.cy.js'"
   },
   "repository": {
     "type": "git",
