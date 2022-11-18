@@ -4,18 +4,18 @@ on:
     branches:
       - 'experiment'
 jobs:
-  name: Test
-  runs-on: ubuntu-latest
-  container: cypress/browsers:node18.6.0-chrome105-ff104
-  steps:
-    - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
-    - name: Checkout
-      uses: actions/checkout@v3
+  cypress-run:
+    runs-on: ubuntu-latest
+    container: cypress/browsers:node18.6.0-chrome105-ff104
+    steps:
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    #Install NPM dependencies, cache them correctly
-    # and runn Cypress tests from dropdown.cy.js spec file
-    - name: Run Cypress tests with chrome 
-      uses: cypress-io/github-action@v4.1.0  
-      with:
-        browser: chrome
-        command: npm run test:ci
+      #Install NPM dependencies, cache them correctly
+      # and runn Cypress tests from dropdown.cy.js spec file
+      - name: Run Cypress tests with chrome 
+        uses: cypress-io/github-action@v4.1.0  
+        with:
+          browser: chrome
+          command: npm run test:ci
