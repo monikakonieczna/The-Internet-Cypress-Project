@@ -10,7 +10,7 @@ jobs:
       - name: Install node
         uses: actions/setup-node@v3
         with:
-            node:version: '18.12.1'
+            node-version: '18.12.1'
       - name: Install dependencies
         run: npm install
       - name: Run Cypress tests with chrome 
