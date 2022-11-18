@@ -26,6 +26,7 @@
     "@cypress/xpath": "^2.0.3"
   },
   "dependencies": {
-    "cypress-downloadfile": "^1.2.3"
+    "cypress-downloadfile": "^1.2.3",
+    "cypress-real-events": "^1.7.4"
   }
 }
