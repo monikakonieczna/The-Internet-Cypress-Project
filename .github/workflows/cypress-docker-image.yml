@@ -10,7 +10,7 @@ jobs:
   steps:
     - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
     - name: Checkout
-        uses: actions/checkout@v3
+      uses: actions/checkout@v3
 
     #Install NPM dependencies, cache them correctly
     # and runn Cypress tests from dropdown.cy.js spec file
