@@ -21,4 +21,4 @@ jobs:
         uses: cypress-io/github-action@v4.1.0  
         with:
           browser: chrome
-          command: npm run cypress run --browser chrome --env grepTags=${{ github.event.inputs.test_tag }} --spec cypress/e2e/dropdown.cy.js
+          command: npx run cypress run --browser chrome --env grepTags=${{ github.event.inputs.test_tag }} --spec cypress/e2e/dropdown.cy.js
