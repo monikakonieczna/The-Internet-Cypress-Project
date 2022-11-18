@@ -1,10 +1,16 @@
 name: Github Actions Demo
-on: [pull_request]
+on: 
+  push:
+    branches:
+      - 'master'
+  workflow_dispatch: 
+
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
         uses: actions/checkout@v2
       - name: Install node
         uses: actions/setup-node@v2
@@ -12,8 +18,8 @@ jobs:
             node:version: '18.12.1'
       - name: Install dependencies
         run: npm install
-      - name: Cypress run 
-        uses: cypress-io/github-action@v4.1.0
-          with:
-            package-manager: npm
-            command: test:ci
+      - name: Run Cypress tests with chrome 
+        uses: cypress-io/github-action@v4.1.0 
+        with:
+          package-manager: npm
+          command: test:ci
