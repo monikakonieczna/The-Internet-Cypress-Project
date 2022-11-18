@@ -1,4 +1,4 @@
-name: Github Actions Demo
+name: Github Actions triggered by pull request event
 on: [pull_request]
 jobs:
   cypress-run:
