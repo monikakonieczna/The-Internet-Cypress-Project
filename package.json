@@ -6,7 +6,8 @@
   "scripts": {
     "cy:test": "cypress run",
     "cy:open": "cypress open",
-    "cy:run": "npm run cypress run"
+    "cypress run": "npm run cypress run",
+    "test:ci": "cypress run --spec 'cypress/e2e/dropdown.cy.js' --browser chrome"
   },
   "repository": {
     "type": "git",
