@@ -6,6 +6,10 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       on('task', {downloadFile})
     },
+    setupNodeEvents(on, config) {
+      require('@cypress/grep/src/plugin')(config);
+      return config;
+  },
     baseUrl: 'http://the-internet.herokuapp.com'
   },
 });

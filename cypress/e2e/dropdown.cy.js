@@ -1,4 +1,4 @@
-describe('Test chioce from a dropdwon list', () => {
+describe('Test chioce from a dropdown list', () => {
     beforeEach(() => {
         cy.visit('/dropdown');
     })
@@ -8,7 +8,7 @@ describe('Test chioce from a dropdwon list', () => {
         
     })
 
-    it('should choose option 2', () => {
+    it('should choose option 2', { tags: '@smoke' }, () => {
         cy.get('select').select('Option 2').should('have.value', '2')
         
     })

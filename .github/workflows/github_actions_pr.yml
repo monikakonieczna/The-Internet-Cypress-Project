@@ -1,0 +1,19 @@
+name: Github Actions triggered by pull request event
+on: [pull_request]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install node
+        uses: actions/setup-node@v3
+        with:
+            node-version: '18.12.1'
+      - name: Install dependencies
+        run: npm install
+      - name: Run Cypress tests with chrome 
+        uses: cypress-io/github-action@v4.1.0 
+        with:
+          command: npm run test:ci

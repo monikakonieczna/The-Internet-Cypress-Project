@@ -12,6 +12,7 @@ This tests are purely for Cypress features practice. Therefore the list of used 
 + <a href="https://github.com/4teamwork/cypress-drag-drop">Drag and Drop plugin</a>
 + <a href="https://github.com/cypress-io/cypress/tree/develop/npm/xpath">Xpath plugin</a>
 + <a href="https://github.com/dmtrKovalenko/cypress-real-events">Real events plugin</a>
++ <a href="https://github.com/cypress-io/cypress/tree/develop/npm/grep">Grep plugin</a>
 + Shadow DOM
 + Hover and Hidden Elements
 + File download, File read
