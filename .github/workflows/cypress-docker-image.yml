@@ -17,5 +17,7 @@ jobs:
       - name: Run Cypress tests with chrome 
         uses: cypress-io/github-action@v4.1.0  
         with:
+          start: npm run cy:record
           browser: chrome
-          command: npm run test:ci
+          record: true
+          config: videos\folder=/tmp/cypress-videos
