@@ -21,6 +21,17 @@ This tests are purely for Cypress features practice. Therefore the list of used 
 + Java Script alerts
 + Key presses
 
+## CI
+Additionally those tests are configured to run in GitHub workflow. It is using GitHub Actions to run tests after git actions such as: PUSH, PULL REQUEST.
+It is possible to trigger GitHUb Workflow also manually. Configuration files can be found in directory: .github/workflows.
+
+| CI  | Trigger | Basic config file |
+| --- | ---- | ---- |
+| GitHub Actions | manual | [github_actions_manual.yml](.github/workflows/github_actions_manual.yml) | 
+| GitHub Actions | push | [cypress-docker-image.yml](.github/workflows/cypress-docker-image.yml) | 
+| GitHub Actions | pull_request | [github_actions_pr.yml](.github/workflows/github_actions_pr.yml) | 
+
+
 
 ## Getting Started
 
